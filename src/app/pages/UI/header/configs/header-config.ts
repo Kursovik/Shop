@@ -1,27 +1,31 @@
-import {MenuItem} from "primeng/api";
-import {Router} from "@angular/router";
+import { MenuItem } from 'primeng/api';
+import { Router } from '@angular/router';
 
-
-export function HEADER_MENU(router: Router): MenuItem[]
-{
- return [
+export function HEADER_MENU(router: Router): MenuItem[] {
+  return [
     {
-      label: 'Главная',
+      label: 'Доставка и оплата',
       command: () => {
         router.navigate(['home']);
-      }
+      },
     },
     {
-      label: 'Товары',
-      command: ()=>{
-        router.navigate(['products'])
-      }
+      label: 'О компании',
+      command: () => {
+        router.navigate(['products']);
+      },
     },
     {
-      label: 'О нас',
-      command: ()=>{
+      label: 'Контакты',
+      command: () => {
         router.navigate(['about']);
-      }
+      },
     },
-  ]
+    {
+      label: 'Оптовым покупателям',
+      command: () => {
+        router.navigate(['']);
+      },
+    },
+  ];
 }

@@ -1,0 +1,58 @@
+:host ::ng-deep{
+  .header-top{
+   .p-toolbar,.p-menubar{
+     background-color: #2D2D2D;
+     border: none
+   }
+    .p-menuitem-text{
+      color: #FAFBFC !important;
+    }
+    .p-menuitem-link{
+      background: none !important;
+
+    }
+    .p-menuitem-link:not(.p-disabled):hover{
+      .p-menuitem-text{
+        color: #FFC540 !important;
+      }
+    }
+    .button-log{
+      background: transparent;
+      border: none ;
+      cursor: pointer;
+    }
+  }
+  .header-bottom{
+    .logo{
+      display: flex;
+      .logo-text{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 96%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.002em;
+        color: #4E4C4C;
+      }
+    }
+    .header-search{
+      width: 50%;
+    }
+    .basket{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .basket-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.002em;
+        color: #1C629E;
+      }
+    }
+  }
+}
