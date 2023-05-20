@@ -1,0 +1,23 @@
+
+::ng-deep{
+  .p-card{
+
+    padding: 24px 16px;
+    .card-img{
+      width: 100%;
+      height: 200px;
+      border-radius: 4px;
+    }
+    .p-card-footer{
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-button-basket{
+      background: #FFCF62;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      padding: 8px 8px;
+    }
+  }
+}

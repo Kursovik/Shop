@@ -1,1 +1,5 @@
-<p>products works!</p>
+<div class="grid mt-1">
+<ng-container *ngFor="let product of products">
+  <app-product class="col-3" [product]="product"></app-product>
+</ng-container>
+</div>
